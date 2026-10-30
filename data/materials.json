@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "id": "M01",
+      "topic": "产品发布短视频",
+      "content": "产品支持字幕功能；目标平台为短视频平台。",
+      "supports_plan": "plan_A",
+      "complete": true
+    },
+    {
+      "id": "M02",
+      "topic": "产品发布短视频（精简）",
+      "content": "产品支持字幕功能。",
+      "supports_plan": "plan_B",
+      "complete": true
+    },
+    {
+      "id": "M03",
+      "topic": "活动推广",
+      "content": "活动主题待定，缺少预算与截止时间信息。",
+      "supports_plan": null,
+      "complete": false,
+      "missing_fields": ["budget", "deadline"]
+    }
+  ]
+}

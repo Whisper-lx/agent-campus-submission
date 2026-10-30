@@ -1,0 +1,4 @@
+{"case": "case_buget_over", "mode": "offline", "step_no": 1, "tool": "search_material", "args": {"topic": "产品发布短视频"}, "ok": true, "summary": "命中 2 条素材: ['M01', 'M02']", "next_action": "generate_script", "reason": "先检索素材"}
+{"case": "case_buget_over", "mode": "offline", "step_no": 2, "tool": "generate_script", "args": {"material_id": "M01", "plan_name": "plan_A"}, "ok": true, "summary": "已生成脚本，引用 M01", "next_action": "estimate_cost", "reason": "用 M01 生成脚本，按 plan_A"}
+{"case": "case_buget_over", "mode": "offline", "step_no": 3, "tool": "estimate_cost", "args": {"plan_name": "plan_A", "budget": 5}, "ok": true, "summary": "plan_A 估算 12，预算 5，超预算", "next_action": "estimate_cost", "reason": "估算 plan_A 成本"}
+{"case": "case_buget_over", "mode": "offline", "step_no": 4, "tool": "estimate_cost", "args": {"plan_name": "plan_B", "budget": 5}, "ok": true, "summary": "plan_B 估算 8，预算 5，超预算", "next_action": "finish", "reason": "超预算，改选 plan_B 重新估算"}

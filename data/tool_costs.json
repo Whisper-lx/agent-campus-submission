@@ -1,0 +1,15 @@
+{
+  "currency": "模拟单位",
+  "budget_default": 10,
+  "tools": {
+    "search_material": { "cost": 1, "duration_sec": 2, "desc": "检索素材" },
+    "generate_script": { "cost": 3, "duration_sec": 10, "desc": "生成脚本" },
+    "estimate_cost": { "cost": 1, "duration_sec": 1, "desc": "成本估算" },
+    "save_plan": { "cost": 0, "duration_sec": 1, "desc": "保存方案（仅草稿）" }
+  },
+  "plans": {
+    "plan_A": { "desc": "完整版方案", "estimated_cost": 12, "steps": ["search_material","search_material","generate_script","generate_script","estimate_cost","estimate_cost","save_plan"] },
+    "plan_B": { "desc": "精简版替代方案", "estimated_cost": 8, "steps": ["search_material","generate_script","estimate_cost","save_plan"] }
+  },
+  "notes": "方案成本以 estimated_cost 为准；steps 用于展示执行骨架。plan_A 超预算(12>10)，plan_B 可行(8<=10)。"
+}
